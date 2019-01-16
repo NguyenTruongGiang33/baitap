@@ -1,0 +1,138 @@
+<html>
+<head>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		@media screen and (min-width: 576px) {
+			.footerContent {
+				width: 540px;
+			}
+		}
+	
+		
+		@media screen and (min-width: 768px) {
+			.footerContent {
+				width: 720px;
+			}
+		}
+		
+		
+		@media screen and (min-width: 992px) {
+			.footerContent {
+				width: 960px;
+			}
+		}
+		
+	
+		.footer {
+			box-sizing: border-box;
+			box-shadow: #00000033 0px 0px 2px 2px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	
+		.footerContent {
+			height: 100px;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+			display: flex;
+			align-items: center;
+		}
+		
+		.fotterImage {
+			
+		}
+		
+		.footerMenu {
+			display: flex;
+			justify-content: flex-end;
+			flex: 1;
+		}
+		
+		.footerMenuItem {
+			margin-left: 10px;
+		}
+		
+		a{
+			text-decoration: none;
+			color:black;
+		}
+		
+		/* Dropdown Button */
+.dropbtn {
+  background-color: #fff;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;	
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #fff;}
+		
+	</style>
+</head>
+
+
+<body>
+	<div>
+		<footer class="footer">
+			<div class="footerContent">
+				<img width="50px" src="https://txsang.github.io/multiple-lever-menu/images/logo.png"/>
+				<div class="footerMenu">
+					<a class="footerMenuItem" href="#">a1</a>
+					<a class="footerMenuItem" href="#">a2</a>
+					<a class="footerMenuItem" href="#">a3</a>
+					<a class="footerMenuItem" href="#">a4</a>
+					<div class="dropdown">
+				    <a href="#" class="dropbtn">a5</a>
+					  <div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
